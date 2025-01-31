@@ -12,10 +12,14 @@
   --button-dark-color: #1F545B;
   --dark-text-color: #1F545B;
   --black-text-color: #000000;
+  --decoration-line-color-black: #000000;
+  --decoration-line-color-green-light: #4AA4B0;
   --decoration-line-color: #1F545B;
   --button-dark-color-hover: #163c41;
   --dropdown-menu-background-color: #ffffff;
   --bright-text-color: #ffffff;
+  --bright-button-color: #ffffff;
+  --bright-background-color: #ffffff;
   --background-drop-header-menu: #83CFDA;
   --hero-section-background: #E3F9F7;
   --bright-button-color: #ffffff;
@@ -42,6 +46,7 @@
   --indicator-background-color-current-step: #1F545B;
   --news-card-section-color: #F0FFFE;
   --news-card-descriptionbackground-color: #4AA4B0;
+  --button-color-green-ligth: #4AA4B0;
   --background-welcome-modal: #1F545B;
   --input-search-job-color: #CDEEEB;
   --input-search-job-button-icon: #1F545B;
@@ -49,6 +54,10 @@
   --card-serch-job-background: #4AA4B0;
   --card-serch-job-background-accent: #ffff;
   --job-search-section-background: #F0FFFE;
+  --profile-settings-section-background: #F0FFFE;
+  --profile-settings-section-background-mobile: #DFF4F2;
+  --modal-warning-background: #ff6c6c;
+  --arrow-color-background: rgba(172, 234, 235, 0.8);
   font-size: 16px;
   font-family: Montserrat, sans-serif;
   scroll-behavior: smooth;

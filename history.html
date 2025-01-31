@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>ASTROSCIENCE - History</title>
+    <link rel="icon" type="image/png" href="images/historyicon.png">
+    <link href="history.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <nav>
+        <ul class="navigation">
+            <li id="logo-header"><a href="astronomy.html">AstroScience</a></li>
+            <li><a href="astronomy.html">INTRODUCTION</a></li>
+            <li><a href="history.html#history" target="self">HISTORY</a></li>
+            <li><a href="news.html" target="_blank">NEWS</a></li>
+            <li><a href="solarsystem.html" target="_self">SOLAR SYSTEM</a></li>
+            <li><a href="technology.html" target="_self">TECHNOLOGY</a></li>
+        </ul>
+        <hr>
+    </nav>
+    
+    <div id="history" class="history">
+        <h2>History of astronomy</h2>
+        <ol type="I">
+            <li><strong>Ancient civilizations made significant early contributions to astronomy.</strong> Babylonians recorded celestial events; Egyptians aligned their architectural structures with celestial bodies.</li>
+            <img src="images/greeks.jpg" alt="greeks">
+            
+            <li><strong>Greek philosophers developed the geocentric model,</strong> placing Earth at the center of the universe.</li>
+            <img src="images/model.jpg" alt="geocentric model">
+            
+            <li><strong>The Ptolemaic system described the universe as concentric spheres</strong> with Earth at the center.</li>
+            <img src="images/system.jpg" alt="ptolemaic system">
+            
+            <li><strong>Nicolaus Copernicus introduced the heliocentric model,</strong> positioning the Sun at the center of the solar system.</li>
+            <img src="images/heliocentric model.jpg" alt="heliocentric model">
+            
+            <li><strong>Galileo Galilei observed celestial phenomena</strong> such as the moons of Jupiter and the phases of Venus, supporting the heliocentric model.</li>
+            <img src="images/first_telescope.jpg" alt="first telescope">
+            
+            <li><strong>Johannes Kepler formulated laws of planetary motion,</strong> showing planets move in elliptical orbits.</li>
+            <img src="images/kepler-s-laws-n.webp" alt="first laws of planetary motion">
+            
+            <li><strong>Isaac Newton's work on universal gravitation provided a comprehensive explanation of celestial forces</strong> and laid the groundwork for classical mechanics.</li>
+            <img src="images/Nuton.jpeg" alt="Isaac Newton's work on universal gravitation">
+            
+            <li><strong>Edwin Hubble's observations led to the discovery that the universe is expanding,</strong> supporting the Big Bang theory.</li>
+            <img src="images/Big Bang theory.jpg" alt="The Big Bang theory">
+            
+            <li><strong>The discovery of cosmic microwave background radiation in 1965</strong> provided further evidence for the Big Bang theory and enhanced our understanding of the universe's origins.</li>
+            <img src="images/cosmic microwave background radiation.jpg" alt="Cosmic microwave background radiation">
+            
+            <li><strong>Modern astronomy advances with innovations in space telescopes, radio astronomy, and deep-space exploration,</strong> expanding our knowledge of the cosmos.</li>
+            <img src="images/universe.jpg" alt="Cosmos">
+        </ol>
+    </div>
+    <section>
+        <div id="book">
+            <table>
+                <thead>
+                    <tr>
+                        <th id="book-description" colspan="2" style="border-top: 2px solid rgb(253, 234, 173); padding-top: 15px;">
+                            <div class="highlight" style="font-family: 'Cormorant', serif; font-weight: 500;">
+                                Want to learn more about the history of astronomy?
+                            </div>
+                            <div style="font-family: 'Montserrat', sans-serif; font-size: 1.2em;">
+                                Here’s a special offer just for you!<br> 
+                                Order the book 'The History of Astronomy Development' today<br> 
+                                and enjoy an exclusive discount of 20%!<br>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img width="17%" src="images/book.png" alt="Book image">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button style="font-family: 'Libre Franklin', sans-serif;"  id="openFormBtn" class="btn">Order now!</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <div class="blurry-background" id="blurryBackground"></div>
+    <div class="form-container" id="formContainer">
+        <h2>Please enter your details to order the book</h2>
+        <div>
+            <form action="https://formspree.io/f/mgvwjdbg" method="POST" id="orderForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name"pattern="[A-Za-z\s\-']{2,}" title="Please enter a valid name. Only letters, spaces, hyphens, and apostrophes are allowed." placeholder="Enter your name" required>
+            
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email"pattern="^\S+@\S+\.\S+$" title="Please enter your email like this: example@mail.com" placeholder="Enter your email" required>
+                <label for="phone">Your Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="\+\d{12}" title="Please enter a 12-digit phone number starting with +, without spaces or special characters" placeholder="Enter your  phone number" required>
+
+                <label for="quantity">Number of Books:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" placeholder="Enter the required quantity" required>
+            
+                <label for="comments">Comments or Special Requests:</label>
+                <textarea id="comments" name="comments" rows="2" placeholder="Enter your comment here..."></textarea>
+            
+                <div style="text-align: center; margin-top: 15px;">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="terms" name="terms" required style="margin: 0px; width: 25px; vertical-align: middle;">
+                        I agree to the <a style="color:#f5e6a5" href="terms.html" target="_blank">terms of use</a>
+                    </label>
+                </div>
+                <div style="text-align: center; margin-top: 15px;">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+    
+    
+    </div>
+
+   
+      </div></footer>
+    <div class="scroll-to-top" onclick="scrollToTop()">↑</div>
+    <div class="signature">
+        <p>Created by &#169;<a href="https://www.facebook.com/people/Анастасия-Курдюкова/pfbid02THfgePo1cDBj3B3kc4DxdNLPep5UL5cHMEZvcpSfjj4BAmrubxadmrZ62mwprgq3l/" target="_blank" title="Facebook profile">Mirenoi - 122-23-1</a></p>
+    </div>
+    <div class="scroll-to-top" onclick="scrollToTop()">↑</div>
+</div>
+<script>
+    
+    document.getElementById('openFormBtn').addEventListener('click', function() {
+            var formContainer = document.getElementById('formContainer');
+            var blurryBackground = document.getElementById('blurryBackground');
+            formContainer.classList.add('active'); 
+            blurryBackground.style.display = 'block';
+        });
+
+        document.getElementById('blurryBackground').addEventListener('click', function() {
+            var formContainer = document.getElementById('formContainer');
+            var blurryBackground = document.getElementById('blurryBackground');
+            formContainer.classList.remove('active');
+            blurryBackground.style.display = 'none';
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+</script>
+</body>
+</html>
+
+
+
+
+
+

@@ -261,6 +261,8 @@ body.active {
     border: none;
 }
 
-.header-navigation__menu-item-dropdown-user-account-computer .header-navigation__menu-item .header-navigation__menu-link{
-color: var(--bright-text-color)
+.header-navigation__menu-item-dropdown-user-account-computer .header-navigation__menu-item .header-navigation__menu-link {
+    color: var(--bright-text-color)
 }
+
+
