@@ -7,9 +7,11 @@
         right: 20px;
         width: 50px;
         height: 50px;
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: center;
-        line-height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: 50%;
         cursor: pointer;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -22,8 +24,20 @@
         color: var(--decoration-line-color-black);
         transform: scale(1.1);
     }
+
+    @media (min-width: 700px){
+        .scroll-to-top {
+        font-size: 3rem;
+        padding-bottom: 7px ;
+    }
+
+    }
 </style>
+
 <div class="scroll-to-top" onclick="scrollToTop()">↑</div>
-<script>function scrollToTop() {
+
+<script>
+    function scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-    }</script>
+    }
+</script>

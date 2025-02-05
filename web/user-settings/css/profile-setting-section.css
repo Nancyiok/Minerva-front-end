@@ -216,7 +216,7 @@
 }
 
 .custom-checkbox:checked::after {
-    content: "✔";
+    content: "✓";
     font-size: 16px;
     color: white;
     font-weight: bold;
